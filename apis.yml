@@ -1,7 +1,24 @@
 aid: publishizer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/publishizer.png
 name: Publishizer
-description: Publishizer is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Publishizer is a book crowdfunding platform and literary agency that connects
+  authors with readers and publishers. Authors create book proposals and run pre-order
+  campaigns; readers pre-order copies to signal demand; and publishers use data such
+  as pre-order volume and proposal quality to discover and acquire promising manuscripts.
+  It was surfaced as a portfolio company of 500 Global and added to the API Evangelist
+  network. As of this enrichment pass the company publishes a consumer web platform
+  and blog but no public developer API, documentation, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/publishizer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Publishing
+- Crowdfunding
+- Books
+- Authors
+- Literary Agency
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,22 @@ maintainers:
 common:
 - type: Website
   url: https://publishizer.com
+- type: Blog
+  url: https://publishizer.com/blog/
+- type: Support
+  url: https://publishizer.com/about/faq/
+- type: SignUp
+  url: https://publishizer.com/accounts/signup/
+- type: Login
+  url: https://publishizer.com/accounts/login/
+- type: TermsOfService
+  url: https://publishizer.com/about/terms/
+- type: PrivacyPolicy
+  url: https://publishizer.com/about/privacy/
+- type: DomainSecurity
+  url: security/publishizer-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
